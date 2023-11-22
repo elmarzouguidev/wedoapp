@@ -22,7 +22,7 @@ trait UuidGenerator
     {
         static::creating(function ($model) {
             if (Schema::hasColumn($model->getTable(), $model->getUuidName())) {
-                $model->{$model->getUuidName()} = Str::uuid();
+                $model->{$model->getUuidName()} = Str::uuid()->toString();
             }
         });
     }

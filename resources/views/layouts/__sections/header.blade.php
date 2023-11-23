@@ -47,8 +47,8 @@
                                                     <div class="mega-menu-link">
                                                         <h3>Company</h3>
                                                         <ul>
-                                                            <li><a href="about.html">About Us</a></li>
-                                                            <li><a href="partner.html">Partners</a></li>
+                                                            <li><a href="{{route('company.about')}}">About Us</a></li>
+                                                            <li><a href="{{route('company.partner')}}">Partners</a></li>
                                                             <li><a href="career.html">Careers</a></li>
                                                             <li><a href="event.html">Events</a></li>
                                                             <li><a href="team.html">Team</a></li>

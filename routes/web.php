@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\WEDOAPP\CompanyController;
 use App\Http\Controllers\WEDOAPP\HomeController;
+use App\Http\Controllers\WEDOAPP\PartnerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,10 @@ Route::get('/', function () {
 });
 Route::group(['middleware' => 'compress_html'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('/company', [CompanyController::class, 'index'])->name('company');
+
+    Route::group(['prefix' => 'company'], function () {
+        Route::get('/', [CompanyController::class, 'index'])->name('company');
+        Route::get('/about', [CompanyController::class, 'index'])->name('company.about');
+        Route::get('/partner', [PartnerController::class, 'index'])->name('company.partner');
+    });
 });

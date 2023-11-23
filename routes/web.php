@@ -4,15 +4,18 @@ use App\Http\Controllers\WEDOAPP\BlogController;
 use App\Http\Controllers\WEDOAPP\CareerController;
 use App\Http\Controllers\WEDOAPP\CompanyController;
 use App\Http\Controllers\WEDOAPP\EventController;
+use App\Http\Controllers\WEDOAPP\FaqController;
 use App\Http\Controllers\WEDOAPP\FeatureController;
 use App\Http\Controllers\WEDOAPP\HomeController;
 use App\Http\Controllers\WEDOAPP\OverviewController;
 use App\Http\Controllers\WEDOAPP\PartnerController;
 use App\Http\Controllers\WEDOAPP\PricingController;
 use App\Http\Controllers\WEDOAPP\ReleaseController;
+use App\Http\Controllers\WEDOAPP\ServiceController;
 use App\Http\Controllers\WEDOAPP\SolutionController;
 use App\Http\Controllers\WEDOAPP\TeamController;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Architecture\Services\ServiceContainer;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,4 +55,10 @@ Route::group(['middleware' => 'compress_html'], function () {
     Route::get('/feature', [FeatureController::class, 'index'])->name('feature');
     Route::get('/release', [ReleaseController::class, 'index'])->name('release');
     Route::get('/solution', [SolutionController::class, 'index'])->name('solution');
+
+    Route::get('/services', [ServiceController::class, 'index'])->name('services');
+    Route::get('/services/{service}', [ServiceController::class, 'single'])->name('services.single');
+
+    Route::get('/faqs', [FaqController::class, 'index'])->name('faqs');
+    
 });

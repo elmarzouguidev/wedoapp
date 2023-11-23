@@ -51,20 +51,20 @@
                                                             <li><a href="{{ route('company.partner') }}">Partners</a>
                                                             </li>
                                                             <li><a href="{{ route('company.career') }}">Careers</a></li>
-                                                            <li><a href="{{route('company.event')}}">Events</a></li>
-                                                            <li><a href="{{route('company.teams')}}">Team</a></li>
-                                                            <li><a href="{{route('blog')}}">Blog</a></li>
+                                                            <li><a href="{{ route('company.event') }}">Events</a></li>
+                                                            <li><a href="{{ route('company.teams') }}">Team</a></li>
+                                                            <li><a href="{{ route('blog') }}">Blog</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mega-menu-link">
                                                         <h3>Product</h3>
                                                         <ul>
-                                                            <li><a href="{{route('overview')}}">Overview</a></li>
-                                                            <li><a href="{{route('pricing')}}">Pricing</a></li>
-                                                            <li><a href="{{route('feature')}}">Features</a></li>
-                                                         
-                                                            <li><a href="{{route('release')}}">New Releases</a></li>
-                                                            <li><a href="{{route('solution')}}">Solutions</a></li>
+                                                            <li><a href="{{ route('overview') }}">Overview</a></li>
+                                                            <li><a href="{{ route('pricing') }}">Pricing</a></li>
+                                                            <li><a href="{{ route('feature') }}">Features</a></li>
+
+                                                            <li><a href="{{ route('release') }}">New Releases</a></li>
+                                                            <li><a href="{{ route('solution') }}">Solutions</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mega-menu-link">
@@ -203,7 +203,7 @@
                             </div>
                         </li>
                         <li class="mega-menu-item">
-                            <a href="service.html">Services</a>
+                            <a href="{{ route('services') }}">Services</a>
                             <span class="dropdown-menu-item-icon">
                                 <i class="las la-angle-down"></i>
                             </span>
@@ -325,7 +325,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="faq.html">FAQ</a>
+                            <a href="{{ route('faqs') }}">FAQ</a>
                         </li>
                     </ul>
                 </nav>

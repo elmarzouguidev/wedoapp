@@ -111,7 +111,7 @@
                             </div>
                         </li>
                         <li class="mega-menu-item">
-                            <a href="portfolio.html">Portfolio</a>
+                            <a href="{{ route('portfolios') }}">Portfolio</a>
                             <span class="dropdown-menu-item-icon">
                                 <i class="las la-angle-down"></i>
                             </span>

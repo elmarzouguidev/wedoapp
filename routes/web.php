@@ -9,6 +9,7 @@ use App\Http\Controllers\WEDOAPP\FeatureController;
 use App\Http\Controllers\WEDOAPP\HomeController;
 use App\Http\Controllers\WEDOAPP\OverviewController;
 use App\Http\Controllers\WEDOAPP\PartnerController;
+use App\Http\Controllers\WEDOAPP\PortfolioController;
 use App\Http\Controllers\WEDOAPP\PricingController;
 use App\Http\Controllers\WEDOAPP\ReleaseController;
 use App\Http\Controllers\WEDOAPP\ServiceController;
@@ -31,7 +32,7 @@ use PHPUnit\Architecture\Services\ServiceContainer;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['middleware' => 'compress_html'], function () {
+Route::group(['middleware' => 'web'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     Route::group(['prefix' => 'company'], function () {
@@ -60,5 +61,7 @@ Route::group(['middleware' => 'compress_html'], function () {
     Route::get('/services/{service}', [ServiceController::class, 'single'])->name('services.single');
 
     Route::get('/faqs', [FaqController::class, 'index'])->name('faqs');
-    
+
+    Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolios');
+    Route::get('/portfolio/{prpject}', [PortfolioController::class, 'single'])->name('portfolios.single');
 });

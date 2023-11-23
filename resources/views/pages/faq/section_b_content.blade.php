@@ -130,58 +130,60 @@
                 </div>
             </div>
 
-            <!-- <div class="faq-items-box">
-                        <div class="faq-box">
-                            <div class="icon">
-                                <img src="./assets/imgs/question-icon.svg" alt="Icon"/>
-                            </div>
-                            <div class="content-body">
-                                <h3>What does your company will provide?</h3>
-                                <p>At our IT service company, we give offer a comprehensive range of server solutions, including managed IT in services, network infrastructure setup.</p>
-                            </div>
-                        </div>
-                        <div class="faq-box">
-                            <div class="icon">
-                                <img src="./assets/imgs/question-icon.svg" alt="Icon"/>
-                            </div>
-                            <div class="content-body">
-                                <h3>What does your company will provide?</h3>
-                                <p>At our IT service company, we give offer a comprehensive range of server solutions, including managed IT in services, network infrastructure setup.</p>
-                            </div>
-                        </div>
-                        <div class="faq-box">
-                            <div class="icon">
-                                <img src="./assets/imgs/question-icon.svg" alt="Icon"/>
-                            </div>
-                            <div class="content-body">
-                                <h3>Do you offer 24/7 support for services?</h3>
-                            </div>
-                        </div>
-                        <div class="faq-box">
-                            <div class="icon">
-                                <img src="./assets/imgs/question-icon.svg" alt="Icon"/>
-                            </div>
-                            <div class="content-body">
-                                <h3>Can you assist with recovery planning?</h3>
-                            </div>
-                        </div>
-                        <div class="faq-box">
-                            <div class="icon">
-                                <img src="./assets/imgs/question-icon.svg" alt="Icon"/>
-                            </div>
-                            <div class="content-body">
-                                <h3>Can you help with cloud management?</h3>
-                            </div>
-                        </div>
-                        <div class="faq-box">
-                            <div class="icon">
-                                <img src="./assets/imgs/question-icon.svg" alt="Icon"/>
-                            </div>
-                            <div class="content-body">
-                                <h3>How can get started with your services?</h3>
-                            </div>
-                        </div>
-                    </div> -->
+            <div class="faq-items-box">
+                <div class="faq-box">
+                    <div class="icon">
+                        <img src="./assets/imgs/question-icon.svg" alt="Icon" />
+                    </div>
+                    <div class="content-body">
+                        <h3>What does your company will provide?</h3>
+                        <p>At our IT service company, we give offer a comprehensive range of server solutions, including
+                            managed IT in services, network infrastructure setup.</p>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="icon">
+                        <img src="./assets/imgs/question-icon.svg" alt="Icon" />
+                    </div>
+                    <div class="content-body">
+                        <h3>What does your company will provide?</h3>
+                        <p>At our IT service company, we give offer a comprehensive range of server solutions, including
+                            managed IT in services, network infrastructure setup.</p>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="icon">
+                        <img src="./assets/imgs/question-icon.svg" alt="Icon" />
+                    </div>
+                    <div class="content-body">
+                        <h3>Do you offer 24/7 support for services?</h3>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="icon">
+                        <img src="./assets/imgs/question-icon.svg" alt="Icon" />
+                    </div>
+                    <div class="content-body">
+                        <h3>Can you assist with recovery planning?</h3>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="icon">
+                        <img src="./assets/imgs/question-icon.svg" alt="Icon" />
+                    </div>
+                    <div class="content-body">
+                        <h3>Can you help with cloud management?</h3>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="icon">
+                        <img src="./assets/imgs/question-icon.svg" alt="Icon" />
+                    </div>
+                    <div class="content-body">
+                        <h3>How can get started with your services?</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -52,7 +52,7 @@
                                                             </li>
                                                             <li><a href="{{ route('company.career') }}">Careers</a></li>
                                                             <li><a href="{{route('company.event')}}">Events</a></li>
-                                                            <li><a href="team.html">Team</a></li>
+                                                            <li><a href="{{route('company.teams')}}">Team</a></li>
                                                             <li><a href="blog.html">Blog</a></li>
                                                         </ul>
                                                     </div>

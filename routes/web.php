@@ -5,6 +5,7 @@ use App\Http\Controllers\WEDOAPP\CompanyController;
 use App\Http\Controllers\WEDOAPP\EventController;
 use App\Http\Controllers\WEDOAPP\HomeController;
 use App\Http\Controllers\WEDOAPP\PartnerController;
+use App\Http\Controllers\WEDOAPP\TeamController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,5 +32,7 @@ Route::group(['middleware' => 'compress_html'], function () {
         Route::get('/career', [CareerController::class, 'index'])->name('company.career');
         Route::get('/events', [EventController::class, 'index'])->name('company.event');
         Route::get('/events/{event?}', [EventController::class, 'single'])->name('company.event.single');
+
+        Route::get('/teams', [TeamController::class, 'index'])->name('company.teams');
     });
 });

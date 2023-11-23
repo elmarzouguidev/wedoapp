@@ -59,12 +59,12 @@
                                                     <div class="mega-menu-link">
                                                         <h3>Product</h3>
                                                         <ul>
-                                                            <li><a href="overview.html">Overview</a></li>
-                                                            <li><a href="pricing.html">Pricing</a></li>
-                                                            <li><a href="feature.html">Features</a></li>
-                                                            <li><a href="case-studie.html">Case Studies</a></li>
-                                                            <li><a href="new-release.html">New Releases</a></li>
-                                                            <li><a href="solution.html">Solutions</a></li>
+                                                            <li><a href="{{route('overview')}}">Overview</a></li>
+                                                            <li><a href="{{route('pricing')}}">Pricing</a></li>
+                                                            <li><a href="{{route('feature')}}">Features</a></li>
+                                                         
+                                                            <li><a href="{{route('release')}}">New Releases</a></li>
+                                                            <li><a href="{{route('solution')}}">Solutions</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mega-menu-link">

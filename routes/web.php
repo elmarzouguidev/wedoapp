@@ -4,8 +4,13 @@ use App\Http\Controllers\WEDOAPP\BlogController;
 use App\Http\Controllers\WEDOAPP\CareerController;
 use App\Http\Controllers\WEDOAPP\CompanyController;
 use App\Http\Controllers\WEDOAPP\EventController;
+use App\Http\Controllers\WEDOAPP\FeatureController;
 use App\Http\Controllers\WEDOAPP\HomeController;
+use App\Http\Controllers\WEDOAPP\OverviewController;
 use App\Http\Controllers\WEDOAPP\PartnerController;
+use App\Http\Controllers\WEDOAPP\PricingController;
+use App\Http\Controllers\WEDOAPP\ReleaseController;
+use App\Http\Controllers\WEDOAPP\SolutionController;
 use App\Http\Controllers\WEDOAPP\TeamController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,4 +44,12 @@ Route::group(['middleware' => 'compress_html'], function () {
 
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/blog/{post}', [BlogController::class, 'single'])->name('blog.single');
+
+    /*** */
+
+    Route::get('/overview', [OverviewController::class, 'index'])->name('overview');
+    Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
+    Route::get('/feature', [FeatureController::class, 'index'])->name('feature');
+    Route::get('/release', [ReleaseController::class, 'index'])->name('release');
+    Route::get('/solution', [SolutionController::class, 'index'])->name('solution');
 });

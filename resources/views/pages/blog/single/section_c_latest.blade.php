@@ -10,12 +10,13 @@
 
         <div class="sticky-news d-flex card-h1">
             <div class="news-img-box">
-                <img src="{{asset('assets/imgs/news-6.jpg') }}" alt="News" />
+                <img src="{{ asset('assets/imgs/news-6.jpg') }}" alt="News" />
             </div>
             <div class="news-content">
                 <h5 class="section-subtitle">MOBILE DEVELOPMENT</h5>
                 <h1 class="section-title">
-                    <a href="blog-details.html">OpenAI launches new alignment division to tackle risks of
+                    <a href="{{ route('blog.single', 'new-1') }}">OpenAI launches new alignment division to tackle risks
+                        of
                         superintelligent AI</a>
                 </h1>
                 <p>The makers of AI have announced the company will be dedicating 20% of its compute processing power
@@ -28,7 +29,7 @@
                         <i class="las la-check"></i> Smart Reminders
                     </li>
                 </ul>
-                <a href="blog-details.html" class="theme-btn">
+                <a href="{{ route('blog.single', 'new-1') }}" class="theme-btn">
                     <i class="icon-right iconoir-arrow-up-right"></i>
                 </a>
             </div>
@@ -38,12 +39,13 @@
 
             <div class="news-item card-h1">
                 <div class="news-img-box">
-                    <img src="{{asset('assets/imgs/news-6.jpg') }}" alt="News" />
+                    <img src="{{ asset('assets/imgs/news-6.jpg') }}" alt="News" />
                 </div>
                 <div class="news-item-body">
                     <h5 class="section-subtitle">WEB DEVELOPMENT</h5>
                     <h1 class="section-title">
-                        <a href="./blog-details.html">New EU battery law could mean EOL for low-cost smartphones</a>
+                        <a href="{{ route('blog.single', 'new-1') }}">New EU battery law could mean EOL for low-cost
+                            smartphones</a>
                     </h1>
                     <p>Apple might have wriggle room for the iPhone when it comes to new EU laws to make smartphone
                         batteries user replaceable</p>
@@ -61,19 +63,20 @@
                             <i class="las la-check"></i> Task Management
                         </li>
                     </ul>
-                    <a href="./blog-details.html" class="theme-btn">
+                    <a href="{{ route('blog.single', 'new-1') }}" class="theme-btn">
                         <i class="icon-right iconoir-arrow-up-right"></i>
                     </a>
                 </div>
             </div>
             <div class="news-item card-h1">
                 <div class="news-img-box">
-                    <img src="{{asset('assets/imgs/news-7.jpg') }}" alt="News" />
+                    <img src="{{ asset('assets/imgs/news-7.jpg') }}" alt="News" />
                 </div>
                 <div class="news-item-body">
                     <h5 class="section-subtitle">CLOUD COMPUTING</h5>
                     <h1 class="section-title">
-                        <a href="./blog-details.html">FTC reported to be investigating OpenAI for consumer protection
+                        <a href="{{ route('blog.single', 'new-1') }}">FTC reported to be investigating OpenAI for
+                            consumer protection
                             violations</a>
                     </h1>
                     <p>OpenAI is reportedly under additional legal scrutiny, as the US Federal Trade asks the company to
@@ -89,7 +92,7 @@
                             <i class="las la-check"></i> Requirement
                         </li>
                     </ul>
-                    <a href="./blog-details.html" class="theme-btn">
+                    <a href="{{ route('blog.single', 'new-1') }}" class="theme-btn">
                         <i class="icon-right iconoir-arrow-up-right"></i>
                     </a>
                 </div>

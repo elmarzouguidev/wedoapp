@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\WEDOAPP\CareerController;
 use App\Http\Controllers\WEDOAPP\CompanyController;
+use App\Http\Controllers\WEDOAPP\EventController;
 use App\Http\Controllers\WEDOAPP\HomeController;
 use App\Http\Controllers\WEDOAPP\PartnerController;
 use Illuminate\Support\Facades\Route;
@@ -28,5 +29,7 @@ Route::group(['middleware' => 'compress_html'], function () {
         Route::get('/about', [CompanyController::class, 'index'])->name('company.about');
         Route::get('/partner', [PartnerController::class, 'index'])->name('company.partner');
         Route::get('/career', [CareerController::class, 'index'])->name('company.career');
+        Route::get('/events', [EventController::class, 'index'])->name('company.event');
+        Route::get('/events/{event?}', [EventController::class, 'single'])->name('company.event.single');
     });
 });

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\WEDOAPP\CompanyController;
+use App\Http\Controllers\WEDOAPP\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::group(['middleware' => 'compress_html'], function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/company', [CompanyController::class, 'index'])->name('company');
 });

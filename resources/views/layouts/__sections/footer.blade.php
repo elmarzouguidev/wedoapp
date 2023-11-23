@@ -4,7 +4,7 @@
         <div class="custom-container">
             <div class="custom-row align-items-end justify-content-between">
                 <div class="left-content">
-                    <a href="index.html" class="logo">
+                    <a href="{{route('home')}}" class="logo">
                         <img src="{{ asset('assets/imgs/logo-white.svg')}}" alt="Logo" />
                     </a>
                     <p>We provide the expertise and support to <br>

@@ -1,10 +1,10 @@
-<header class="header-area">
+<header class="header-area ">
 
     <div class="custom-container">
         <div class="custom-row align-items-center justify-content-between">
             <div class="header-left d-flex align-items-center">
-                <a href="./index.html" class="logo">
-                    <img src="{{ asset('assets/imgs/logo.svg') }}" alt="Logo" />
+                <a href="{{ route('home') }}" class="logo">
+                    <img src="{{ asset('assets/imgs/logo.svg') }}" alt="wedoapp logo" />
                 </a>
 
                 <div class="header-left-right">
@@ -18,22 +18,11 @@
                         <i class="las la-times"></i>
                     </span>
                     <ul>
-                        <li class="dropdown-menu-item">
-                            <a href="index.html">Home</a>
-                            <span class="dropdown-menu-item-icon">
-                                <i class="las la-angle-down"></i>
-                            </span>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="./index.html">IT Services</a>
-                                </li>
-                                <li>
-                                    <a href="./home2.html">Business Consulting</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="mega-menu-item">
-                            <a href="company.html">Company</a>
+                            <a href="{{ route('company') }}">Company</a>
                             <span class="dropdown-menu-item-icon">
                                 <i class="las la-angle-down"></i>
                             </span>
@@ -110,7 +99,7 @@
                                         </div>
                                         <div class="right">
                                             <div class="mega-menu-ads">
-                                                <img src="./assets/imgs/iphone-13-1.jpg" alt="Iphone" />
+                                                <img src="{{ asset('assets/imgs/iphone-13-1.jpg') }}" alt="Iphone" />
                                                 <h2>Solution in your hand</h2>
                                                 <p>Develop IT solutions based on the<br> analysis phase.</p>
                                                 <a href="case-studie-single.html">View more</a>

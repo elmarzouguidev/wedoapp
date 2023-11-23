@@ -53,7 +53,7 @@
                                                             <li><a href="{{ route('company.career') }}">Careers</a></li>
                                                             <li><a href="{{route('company.event')}}">Events</a></li>
                                                             <li><a href="{{route('company.teams')}}">Team</a></li>
-                                                            <li><a href="blog.html">Blog</a></li>
+                                                            <li><a href="{{route('blog')}}">Blog</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mega-menu-link">

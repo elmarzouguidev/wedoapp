@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WEDOAPP\BlogController;
 use App\Http\Controllers\WEDOAPP\CareerController;
 use App\Http\Controllers\WEDOAPP\CompanyController;
 use App\Http\Controllers\WEDOAPP\EventController;
@@ -35,4 +36,7 @@ Route::group(['middleware' => 'compress_html'], function () {
 
         Route::get('/teams', [TeamController::class, 'index'])->name('company.teams');
     });
+
+    Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+    Route::get('/blog/{post}', [BlogController::class, 'single'])->name('blog.single');
 });

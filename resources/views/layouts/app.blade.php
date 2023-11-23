@@ -15,13 +15,13 @@
 
 <body>
 
-    <main class="main-page homepage">
+    <main class="main-page  {{ request()->routeIs('blog') ? 'blog-page' : 'homepage' }}">
 
 
         @include('layouts.__sections.topBar')
 
         @include('layouts.__sections.header')
-        
+
 
         @yield('content')
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WEDOAPP\CareerController;
 use App\Http\Controllers\WEDOAPP\CompanyController;
 use App\Http\Controllers\WEDOAPP\HomeController;
 use App\Http\Controllers\WEDOAPP\PartnerController;
@@ -26,5 +27,6 @@ Route::group(['middleware' => 'compress_html'], function () {
         Route::get('/', [CompanyController::class, 'index'])->name('company');
         Route::get('/about', [CompanyController::class, 'index'])->name('company.about');
         Route::get('/partner', [PartnerController::class, 'index'])->name('company.partner');
+        Route::get('/career', [CareerController::class, 'index'])->name('company.career');
     });
 });

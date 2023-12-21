@@ -65,3 +65,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolios');
     Route::get('/portfolio/{prpject}', [PortfolioController::class, 'single'])->name('portfolios.single');
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

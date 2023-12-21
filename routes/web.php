@@ -67,6 +67,6 @@ Route::group(['middleware' => 'web'], function () {
 });
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'theadmin'], function () {
     Voyager::routes();
 });

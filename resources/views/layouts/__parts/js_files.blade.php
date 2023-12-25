@@ -5,5 +5,5 @@
 <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/client-marquee.js') }}"></script>
 <script src="{{ asset('assets/js/theme-custom.js') }}"></script>
-<script src="{{ asset('assets/js/form1.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/form1.js') }}"></script> --}}
 <script src="{{ asset('assets/js/subscribe-form.js') }}"></script>

@@ -1,15 +1,18 @@
 <footer class="footer-area">
-    <img src="{{ asset('assets/imgs/bg-shape-4.svg')}}" alt="Shape" class="animation-slide-right bg-shape" />
+    <img src="{{ asset('assets/imgs/bg-shape-4.svg') }}" alt="Shape" class="animation-slide-right bg-shape" />
     <div class="footer-top">
         <div class="custom-container">
             <div class="custom-row align-items-end justify-content-between">
                 <div class="left-content">
-                    <a href="{{route('home')}}" class="logo">
-                        <img src="{{ asset('assets/imgs/logo-white.svg')}}" alt="Logo" />
+                    <a href="{{ route('home') }}" class="logo">
+                        {{-- <img src="{{ asset('assets/imgs/logo-white.svg')}}" alt="Logo" /> --}}
+                        {{-- <x-application-logo width="100" alt="wedoapp logo" /> --}}
                     </a>
                     <p>We provide the expertise and support to <br>
                         propel your business forward.</p>
-                    <form action="" method="POST" class="subscribe-form">
+                    <form action="" method="post" class="subscribe-form">
+                        @csrf
+                        @honeypot
                         <div class="subscribe-box d-flex">
                             <input type="email" id="email" name="email" placeholder="Enter Your Email" />
                             <button id="submit2" class="theme-btn">Get Started</button>
@@ -23,16 +26,16 @@
                     </form>
                     <div class="footer-clients d-flex align-items-center">
                         <div class="footer-client-img">
-                            <img src="{{ asset('assets/imgs/youtube.svg')}}" alt="Youtube" />
+                            <img src="{{ asset('assets/imgs/youtube.svg') }}" alt="Youtube" />
                         </div>
                         <div class="footer-client-img">
-                            <img src="{{ asset('assets/imgs/webflow.svg')}}" alt="webflow" />
+                            <img src="{{ asset('assets/imgs/webflow.svg') }}" alt="webflow" />
                         </div>
                         <div class="footer-client-img">
-                            <img src="{{ asset('assets/imgs/upwork.svg')}}" alt="upwork" />
+                            <img src="{{ asset('assets/imgs/upwork.svg') }}" alt="upwork" />
                         </div>
                         <div class="footer-client-img">
-                            <img src="{{ asset('assets/imgs/shopify.svg')}}" alt="shopify" />
+                            <img src="{{ asset('assets/imgs/shopify.svg') }}" alt="shopify" />
                         </div>
                     </div>
                 </div>
@@ -132,15 +135,15 @@
                     <div class="footer-contact-info-item">
                         <h4>Phone</h4>
                         <p>
-                            <a href="tel:+1-455-1482-236">+1-455-1482-236</a> <br>
-                            <a href="tel:+1-938-740-75556">+1-938-740-7555</a>
+                            <a href="tel:+212520513358">+212520513358</a> <br>
+                            {{-- <a href="tel:+1-938-740-75556">+1-938-740-7555</a> --}}
                         </p>
                     </div>
                     <div class="footer-contact-info-item">
                         <h4>Mail</h4>
                         <p>
-                            <a href="mailto:bluebase@mail.com">bluebase@mail.com</a> <br>
-                            <a href="mailto:mandrodio@mail.com">mandrodio@mail.com</a>
+                            <a href="mailto:contact@wedoapp.ma">contact@wedoapp.ma</a> <br>
+                            <a href="mailto:support@wedoapp.ma">support@wedoapp.ma</a>
                         </p>
                     </div>
                 </div>
@@ -158,15 +161,15 @@
                     <li><a href="#">
                             <i class="iconoir-twitter"></i>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="https://www.instagram.com/wedoapp.ma/" target="__blank">
                             <i class="iconoir-instagram"></i>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="https://www.linkedin.com/company/wedoapp-ma" target="__blank">
                             <i class="iconoir-linkedin"></i>
                         </a></li>
                 </ul>
 
-                <p>&copy; 2023 All rights reserved by <a href="https://wedoapp.ma">WEDOAPP</a></p>
+                <p>&copy; {{ now()->format('Y') }} All rights reserved by <a href="https://wedoapp.ma">WEDOAPP</a></p>
             </div>
         </div>
     </div>

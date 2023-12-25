@@ -334,13 +334,13 @@
             <div class="header-right">
                 <div class="header-contact-info d-flex align-items-center">
                     <div class="phone-number">
-                        <a href="tel:+1-938-740-7555">
+                        <a href="tel:+212520513358">
                             Call Us
                             <i class="iconoir-arrow-up-right"></i>
                         </a>
-                        +1-938-740-7555
+                        +212520513358
                     </div>
-                    <a href="contact.html" class="theme-btn">Contact Us</a>
+                    <a href="{{ route('contact.us') }}" class="theme-btn">Contact Us</a>
                 </div>
             </div>
         </div>

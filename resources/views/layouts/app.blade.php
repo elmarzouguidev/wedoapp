@@ -15,7 +15,7 @@
 
 <body>
 
-    <main class="main-page  {{ request()->routeIs('blog') ? 'blog-page' : 'homepage' }}">
+    <main class="main-page {{ request()->routeIs('blog') ? 'blog-page' : 'homepage' }}">
 
 
         @include('layouts.__sections.topBar')

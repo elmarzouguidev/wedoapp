@@ -3,6 +3,7 @@
 use App\Http\Controllers\WEDOAPP\BlogController;
 use App\Http\Controllers\WEDOAPP\CareerController;
 use App\Http\Controllers\WEDOAPP\CompanyController;
+use App\Http\Controllers\WEDOAPP\ContactUsController;
 use App\Http\Controllers\WEDOAPP\EventController;
 use App\Http\Controllers\WEDOAPP\FaqController;
 use App\Http\Controllers\WEDOAPP\FeatureController;
@@ -34,6 +35,11 @@ Route::get('/', function () {
 });
 Route::group(['middleware' => 'web'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+
+    Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact.us');
+
+    Route::post('/contact-us', [ContactUsController::class, 'send'])->middleware('check_spam')->name('contact.us.post');
+
 
     Route::group(['prefix' => 'company'], function () {
         Route::get('/', [CompanyController::class, 'index'])->name('company');

@@ -158,7 +158,7 @@
                     <li><a href="#">
                             <i class="iconoir-dribbble"></i>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="https://twitter.com/wedoappma" target="__blank">
                             <i class="iconoir-twitter"></i>
                         </a></li>
                     <li><a href="https://www.instagram.com/wedoapp.ma/" target="__blank">

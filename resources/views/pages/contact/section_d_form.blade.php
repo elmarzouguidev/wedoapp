@@ -14,7 +14,7 @@
                             <div class="input-group">
                                 <label for="full_name">Full name</label>
                                 <input type="text" id="full_name" name="full_name" placeholder="First Name"
-                                 maxlength="100"   required />
+                                    maxlength="100" required />
                             </div>
                         </div>
                         <div class="input-row">
@@ -119,17 +119,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://twitter.com/wedoappma" target="__blank">
                                 <i class="iconoir-twitter"></i> Twitter
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/wedoapp.ma/" target="__blank">
                                 <i class="iconoir-instagram"></i> Instagram
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/company/wedoapp-ma" target="__blank">
                                 <i class="iconoir-linkedin"></i> linkedin
                             </a>
                         </li>

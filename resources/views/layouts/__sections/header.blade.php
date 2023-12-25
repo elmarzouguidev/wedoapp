@@ -4,7 +4,8 @@
         <div class="custom-row align-items-center justify-content-between">
             <div class="header-left d-flex align-items-center">
                 <a href="{{ route('home') }}" class="logo">
-                    <img src="{{ asset('assets/imgs/logo.svg') }}" alt="wedoapp logo" />
+                    {{-- <img src="{{ asset('assets/imgs/logo.svg') }}" alt="wedoapp logo" /> --}}
+                    <x-application-logo width="100" alt="wedoapp logo" />
                 </a>
 
                 <div class="header-left-right">

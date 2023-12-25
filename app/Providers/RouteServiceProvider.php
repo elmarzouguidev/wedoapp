@@ -35,6 +35,16 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+            $this->devlopperRoutes();
         });
+    }
+
+    private function devlopperRoutes()
+    {
+        Route::middleware('web')
+            ->prefix('dev')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/dev.php'));
     }
 }

@@ -155,18 +155,26 @@
         <div class="custom-container">
             <div class="custom-row d-flex align-items-center justify-content-between">
                 <ul class="social-links d-flex align-items-center">
-                    <li><a href="#">
+                    <li>
+                        <a href="#">
                             <i class="iconoir-dribbble"></i>
-                        </a></li>
-                    <li><a href="https://twitter.com/wedoappma" target="__blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/wedoappma" target="__blank">
                             <i class="iconoir-twitter"></i>
-                        </a></li>
-                    <li><a href="https://www.instagram.com/wedoapp.ma/" target="__blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/wedoapp.ma/" target="__blank">
                             <i class="iconoir-instagram"></i>
-                        </a></li>
-                    <li><a href="https://www.linkedin.com/company/wedoapp-ma" target="__blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/wedoapp-ma" target="__blank">
                             <i class="iconoir-linkedin"></i>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
 
                 <p>&copy; {{ now()->format('Y') }} All rights reserved by <a href="https://wedoapp.ma">WEDOAPP</a></p>

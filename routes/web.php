@@ -33,7 +33,7 @@ use PHPUnit\Architecture\Services\ServiceContainer;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['middleware' => 'web', 'compress_html'], function () {
+Route::group(['middleware' => ['web', 'compress_html']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact.us');

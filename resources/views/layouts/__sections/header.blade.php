@@ -9,7 +9,7 @@
                 </a>
 
                 <div class="header-left-right">
-                    <a href="contact.html" class="theme-btn">Contact Us</a>
+                    <a href="{{route('contact.us')}}" class="theme-btn">Contact Us</a>
                     <span class="menu-bar">
                         <i class="las la-bars"></i>
                     </span>
@@ -20,10 +20,10 @@
                     </span>
                     <ul>
                         <li>
-                            <a href="{{ route('home') }}">Home</a>
+                            <a href="{{ route('home') }}">Acceuil</a>
                         </li>
                         <li class="mega-menu-item">
-                            <a href="{{ route('company') }}">Company</a>
+                            <a href="{{ route('company') }}">L'agence</a>
                             <span class="dropdown-menu-item-icon">
                                 <i class="las la-angle-down"></i>
                             </span>
@@ -112,7 +112,7 @@
                             </div>
                         </li>
                         <li class="mega-menu-item">
-                            <a href="{{ route('portfolios') }}">Portfolio</a>
+                            <a href="{{ route('portfolios') }}">Solution</a>
                             <span class="dropdown-menu-item-icon">
                                 <i class="las la-angle-down"></i>
                             </span>
@@ -122,6 +122,30 @@
                                         <div class="left">
                                             <div
                                                 class="mega-menu-link-wrap d-flex align-items-start justify-content-between">
+                                                <div class="mega-menu-portfolio-card">
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/imgs/portfolio-mega-menu-1.jpg') }}"
+                                                            alt="Portfolio" />
+                                                    </div>
+                                                    <div class="content-box">
+                                                        <h3><a href="portfolio-details.html">E-commerce</a>
+                                                        </h3>
+                                                        <p>we undertook a project to <br>migrate their existing.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-menu-portfolio-card">
+                                                    <div class="img-box">
+                                                        <img src="{{ asset('assets/imgs/portfolio-mega-menu-1.jpg') }}"
+                                                            alt="Portfolio" />
+                                                    </div>
+                                                    <div class="content-box">
+                                                        <h3><a href="portfolio-details.html">E-commerce</a>
+                                                        </h3>
+                                                        <p>we undertook a project to <br>migrate their existing.
+                                                        </p>
+                                                    </div>
+                                                </div>
                                                 <div class="mega-menu-portfolio-card">
                                                     <div class="img-box">
                                                         <img src="{{ asset('assets/imgs/portfolio-mega-menu-1.jpg') }}"
@@ -198,6 +222,7 @@
                                                     your daily usage.</p>
                                                 <a href="case-studie-single.html">View more</a>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -326,8 +351,14 @@
                             </div>
                         </li>
                         <li>
-                            <a href="{{ route('faqs') }}">FAQ</a>
+                            <a href="{{ route('home') }}">Projets</a>
                         </li>
+                        <li>
+                            <a href="{{ route('home') }}">Blog</a>
+                        </li>
+                        {{-- <li>
+                            <a href="{{ route('faqs') }}">FAQ</a>
+                        </li> --}}
                     </ul>
                 </nav>
             </div>
@@ -340,7 +371,7 @@
                         </a>
                         +212520513358
                     </div>
-                    <a href="{{ route('contact.us') }}" class="theme-btn">Contact Us</a>
+                    <a href="{{ route('contact.us') }}" class="theme-btn">Contact</a>
                 </div>
             </div>
         </div>

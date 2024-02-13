@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Models\WEDOAPP;
+namespace App\Models;
 
 use App\Traits\GetModelByKeyName;
 use App\Traits\UuidGenerator;

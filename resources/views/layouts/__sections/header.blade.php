@@ -9,7 +9,7 @@
                 </a>
 
                 <div class="header-left-right">
-                    <a href="{{route('contact.us')}}" class="theme-btn">Contact Us</a>
+                    <a href="{{ route('contact.us') }}" class="theme-btn">Contact Us</a>
                     <span class="menu-bar">
                         <i class="las la-bars"></i>
                     </span>
@@ -222,7 +222,7 @@
                                                     your daily usage.</p>
                                                 <a href="case-studie-single.html">View more</a>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>

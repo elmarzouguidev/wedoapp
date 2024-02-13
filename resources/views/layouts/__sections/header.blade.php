@@ -85,13 +85,27 @@
                                             <div
                                                 class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
                                                 <ul class="mega-menu-social d-flex align-items-center">
-                                                    <li><a href="#"><i class="iconoir-dribbble"></i></a>
+                                                    <li>
+                                                        <a href="https://twitter.com/wedoappma" target="__blank">
+                                                            <i class="iconoir-twitter"></i>
+                                                        </a>
                                                     </li>
-                                                    <li><a href="#"><i class="iconoir-twitter"></i></a>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/wedoapp.ma/"
+                                                            target="__blank">
+                                                            <i class="iconoir-instagram"></i>
+                                                        </a>
                                                     </li>
-                                                    <li><a href="#"><i class="iconoir-instagram"></i></a>
+                                                    <li>
+                                                        <a href="https://www.linkedin.com/company/wedoapp-ma"
+                                                            target="__blank">
+                                                            <i class="iconoir-linkedin"></i>
+                                                        </a>
                                                     </li>
-                                                    <li><a href="#"><i class="iconoir-linkedin"></i></a>
+                                                    <li>
+                                                        <a href="https://t.me/wedoappma" target="__blank">
+                                                            <i class="iconoir-telegram"></i>
+                                                        </a>
                                                     </li>
                                                 </ul>
 

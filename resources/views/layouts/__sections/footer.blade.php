@@ -156,11 +156,6 @@
             <div class="custom-row d-flex align-items-center justify-content-between">
                 <ul class="social-links d-flex align-items-center">
                     <li>
-                        <a href="#">
-                            <i class="iconoir-dribbble"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://twitter.com/wedoappma" target="__blank">
                             <i class="iconoir-twitter"></i>
                         </a>
@@ -175,7 +170,13 @@
                             <i class="iconoir-linkedin"></i>
                         </a>
                     </li>
+                    <li>
+                        <a href="https://t.me/wedoappma" target="__blank">
+                            <i class="iconoir-telegram"></i>
+                        </a>
+                    </li>
                 </ul>
+
 
                 <p>&copy; {{ now()->format('Y') }} All rights reserved by <a href="https://wedoapp.ma">WEDOAPP</a></p>
             </div>

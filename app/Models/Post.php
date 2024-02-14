@@ -11,7 +11,7 @@ use App\Traits\Seoable;
 use App\Traits\UuidGenerator;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
+
 
 class Post extends Model
 {
@@ -21,7 +21,6 @@ class Post extends Model
     use HasSlug;
     use Seoable;
 
-    use HasTranslations;
 
 
     /**

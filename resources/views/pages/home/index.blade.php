@@ -11,5 +11,4 @@
     @include('pages.home.section_h_projects')
     @include('pages.home.section_i_news')
     @include('pages.home.section_j_features')
-    @include('pages.home.section_k_contact')
 @endsection

@@ -26,6 +26,8 @@
         @yield('content')
 
 
+        @include('layouts.__sections.contact')
+        
         @include('layouts.__sections.footer')
 
     </main>

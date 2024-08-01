@@ -3,7 +3,7 @@
 Template Name: Synck - Landing Page Template
 Author: WordPress River
 Description:
-Version: 1.1
+Version: 1.0
 
 Main Font    : DM Sans
 Main Color   : #F3F6FD;
@@ -5909,6 +5909,10 @@ img {
     color: var(--primary_color);
     margin-bottom: 0;
 }
+.contact-info-box h6 a {
+    color: var(--primary_color);
+}
+
 
 
 /* Contact 3 */
@@ -6350,6 +6354,15 @@ img {
     color: #ffffff;
 }
 
+/* Additional Css*/
+.blog-2-page .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.blog-details-2-page .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 
-
+.contact-form .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 

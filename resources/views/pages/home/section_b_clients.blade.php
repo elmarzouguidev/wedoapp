@@ -1,4 +1,4 @@
-<section class="client-area">
+<section class="client-area container">
     <div class="clients clients-marquee d-flex align-items-center">
         <div class="client-logo simple-shadow">
             <img src="{{ asset('assets/imgs/client-logo1.svg') }}" alt="Client" />

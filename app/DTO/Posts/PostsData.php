@@ -1,5 +1,6 @@
 <?php
 
+namespace App\DTO\Posts;
 
 use App\Enums\DTO\PostStatus;
 use Carbon\CarbonImmutable;
